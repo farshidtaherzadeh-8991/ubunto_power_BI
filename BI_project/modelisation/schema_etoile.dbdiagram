@@ -1,0 +1,123 @@
+{
+  "version": "1.0.0",
+  "darkMode": false,
+  "gridEnabling": false,
+  "detailLevel": "All",
+  "tablePositions": [
+    {
+      "name": "dim_entreprise",
+      "schemaName": "public",
+      "x": -86.08003300672812,
+      "y": 166.70604585278184
+    },
+    {
+      "name": "dim_commune",
+      "schemaName": "public",
+      "x": 734.3170974962316,
+      "y": 59.32985255097974
+    },
+    {
+      "name": "dim_tranche",
+      "schemaName": "public",
+      "x": 734.3170974962316,
+      "y": 376
+    },
+    {
+      "name": "dim_juridique",
+      "schemaName": "public",
+      "x": -80.84988714287826,
+      "y": 679.6154119077047
+    },
+    {
+      "name": "dim_naf",
+      "schemaName": "public",
+      "x": 729.7499193929975,
+      "y": 621.671180069494
+    },
+    {
+      "name": "fact_entreprises_instant_t",
+      "schemaName": "public",
+      "x": 296,
+      "y": 280
+    }
+  ],
+  "tableGroupCollapseStates": [],
+  "stickyNoteLayouts": [],
+  "referencePaths": [
+    {
+      "firstFieldNames": [
+        "entreprise_id"
+      ],
+      "firstTableName": "fact_entreprises_instant_t",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "entreprise_id"
+      ],
+      "secondTableName": "dim_entreprise",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "commune_id"
+      ],
+      "firstTableName": "fact_entreprises_instant_t",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "commune_id"
+      ],
+      "secondTableName": "dim_commune",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "tranche_id"
+      ],
+      "firstTableName": "fact_entreprises_instant_t",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "tranche_id"
+      ],
+      "secondTableName": "dim_tranche",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "juridique_id"
+      ],
+      "firstTableName": "fact_entreprises_instant_t",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "juridique_id"
+      ],
+      "secondTableName": "dim_juridique",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    },
+    {
+      "firstFieldNames": [
+        "naf_id"
+      ],
+      "firstTableName": "fact_entreprises_instant_t",
+      "firstSchemaName": "public",
+      "firstRelation": "*",
+      "secondFieldNames": [
+        "naf_id"
+      ],
+      "secondTableName": "dim_naf",
+      "secondSchemaName": "public",
+      "secondRelation": "1",
+      "checkPoints": []
+    }
+  ]
+}

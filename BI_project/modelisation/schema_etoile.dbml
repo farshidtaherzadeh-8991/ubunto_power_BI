@@ -1,0 +1,91 @@
+Project BI_Isere_DataWarehouse {
+  database_type: 'MySQL'
+  Note: 'Star Schema - Entreprises Isère à l\'instant T'
+}
+
+// ============================================
+// TABLES DE DIMENSION
+// ============================================
+
+Table dim_entreprise {
+  entreprise_id int [pk]
+  siren varchar(9) [unique, not null]
+  siret varchar(14) [unique, not null]
+  nom_entreprise varchar(255) [not null]
+  date_creation date
+  statut varchar(50)
+  type_voie varchar(50)
+  numero_voie varchar(10)
+  nom_voie varchar(255)
+  code_postal varchar(5)
+  nom_commune varchar(100)
+  code_commune varchar(10)
+  cordoonnees_geo varchar(20)
+}
+
+Table dim_commune { 
+  commune_id int [pk]
+  code_commune varchar(10) [unique, not null]
+  nom_commune varchar(255) [not null]
+  code_postal varchar(5)
+  region varchar(100)
+  departement varchar(100)
+  polygone_geo varchar(50)
+}
+
+Table dim_tranche {
+  tranche_id int [pk]
+  libelle_tranche varchar(100) [not null]
+  borne_inf int
+  borne_sup int
+  borne_moyenne int
+}
+
+Table dim_juridique {
+  juridique_id int [pk]
+  code_juridique varchar(10) [unique, not null]
+  libelle_juridique varchar(255) [not null]
+}
+
+Table dim_naf {
+  naf_id int [pk]
+  code_naf varchar(10) [unique, not null]
+  libelle_naf varchar(255) [not null]
+  section_naf varchar(1)
+  code_niveau1 varchar(10)
+  code_niveau2 varchar(10)
+  code_niveau3 varchar(10)
+  code_niveau4 varchar(10)
+}
+
+
+// ============================================
+// TABLE DE FAITS
+// ============================================
+
+Table fact_entreprises_instant_t {
+  fact_id int [pk, increment]
+  date_observation date [not null]
+  entreprise_id int [not null]
+  commune_id int [not null]
+  tranche_id int [not null]
+  juridique_id int [not null]
+  naf_id int [not null]
+  secteur_id int [not null]
+
+  indexes {
+    (date_observation)
+    (commune_id)
+    (secteur_id)
+  }
+}
+
+// ============================================
+// RELATIONS
+// ============================================
+
+Ref: fact_entreprises_instant_t.entreprise_id > dim_entreprise.entreprise_id
+Ref: fact_entreprises_instant_t.commune_id > dim_commune.commune_id
+Ref: fact_entreprises_instant_t.tranche_id > dim_tranche.tranche_id
+Ref: fact_entreprises_instant_t.juridique_id > dim_juridique.juridique_id
+Ref: fact_entreprises_instant_t.naf_id > dim_naf.naf_id

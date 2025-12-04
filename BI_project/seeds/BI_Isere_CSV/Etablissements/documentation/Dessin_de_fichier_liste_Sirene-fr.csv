@@ -1,0 +1,83 @@
+Nom,Libellé,Longueur,Type,Ordre
+siren,Numéro Siren,9,Texte,1
+nic,Numéro interne de classement de l'établissement,5,Texte,2
+siret,Numéro Siret,14,Texte,3
+statutDiffusionEtablissement,Statut de diffusion de l’établissement,1,Liste de codes,4
+dateCreationEtablissement,Date de création de l’établissement,10,Date,5
+trancheEffectifsEtablissement,Tranche d’effectif salarié de l’établissement,2,Liste de codes,6
+anneeEffectifsEtablissement,Année de validité de la tranche d’effectif salarié de l’établissement,4,Date,7
+activitePrincipaleRegistreMetiersEtablissement,Activité exercée par l’artisan inscrit au registre des métiers,6,Liste de codes,8
+dateDernierTraitementEtablissement,Date du dernier traitement de l’établissement dans le répertoire Sirene,23,Date,9
+etablissementSiege,Qualité de siège ou non de l’établissement,5,Texte,10
+etatAdministratifUniteLegale,État administratif de l’unité légale,1,Liste de codes,11
+statutDiffusionUniteLegale,Statut de diffusion de l’unité légale,1,Liste de codes,12
+unitePurgeeUniteLegale,Unité légale purgée,4,Texte:true ou vide,13
+dateCreationUniteLegale,Date de création de l'unité légale,10,Date,14
+categorieJuridiqueUniteLegale,Catégorie juridique de l’unité légale,4,Liste de codes,15
+denominationUniteLegale,Dénomination de l’unité légale,130,Texte,16
+sigleUniteLegale,Sigle de l’unité légale,20,Texte,17
+denominationUsuelle1UniteLegale,Dénomination usuelle de l’unité légale,70,Texte,18
+denominationUsuelle2UniteLegale,Dénomination usuelle de l’unité légale – deuxième champ,70,Texte,19
+denominationUsuelle3UniteLegale,Dénomination usuelle de l’unité légale – troisième champ,70,Texte,20
+sexeUniteLegale,Caractère féminin ou masculin de la personne physique,4,Liste de codes,21
+nomUniteLegale,Nom de naissance de la personne physique,100,Texte,22
+nomUsageUniteLegale,Nom d’usage de la personne physique,100,Texte,23
+prenom1UniteLegale,Premier prénom déclaré pour un personne physique,20,Texte,24
+prenom2UniteLegale,Deuxième prénom déclaré pour un personne physique,20,Texte,25
+prenom3UniteLegale,Troisième prénom déclaré pour un personne physique,20,Texte,26
+prenom4UniteLegale,Quatrième prénom déclaré pour un personne physique,20,Texte,27
+prenomUsuelUniteLegale,Prénom usuel de la personne physique,20,Texte,28
+pseudonymeUniteLegale,Pseudonyme de la personne physique,100,Texte,29
+activitePrincipaleUniteLegale,Activité principale de l’unité légale,6,Liste de codes,30
+nomenclatureActivitePrincipaleUniteLegale,Nomenclature d’activité de la variable activitePrincipaleUniteLegale,8,Liste de codes,31
+identifiantAssociationUniteLegale,Numéro au Répertoire National des Associations,10,Texte,32
+economieSocialeSolidaireUniteLegale,Appartenance au champ de l’économie sociale et solidaire,1,Liste de codes,33
+societeMissionUniteLegale,Appartenance au champ des sociétés à mission,1,Liste de codes,34
+caractereEmployeurUniteLegale,Caractère employeur de l’unité légale,null,Texte,35
+trancheEffectifsUniteLegale,Tranche d’effectif salarié de l’unité légale,2,Liste de codes,36
+anneeEffectifsUniteLegale,Année de validité de la tranche d’effectif salarié de l’unité légale,4,Date,37
+nicSiegeUniteLegale,Numéro interne de classement (Nic) de l’unité légale,5,Texte,38
+dateDernierTraitementUniteLegale,Date du dernier traitement de l’unité légale dans le répertoire Sirene,23,Date,39
+categorieEntreprise,Catégorie à laquelle appartient l’entreprise,3,Liste de codes,40
+anneeCategorieEntreprise,Année de validité de la catégorie d’entreprise,4,Date,41
+complementAdresseEtablissement,Complément d’adresse,100,Texte,42
+numeroVoieEtablissement,Premier numéro de voie de l’établissement,9,Texte,43
+indiceRepetitionEtablissement,Indice de répétition du premier numéro dans la voie,4,Texte,44
+dernierNumeroVoieEtablissement,Dernier numéro de voie de l’établissement,9,Texte,45
+indiceRepetitionDernierNumeroVoieEtablissement,Indice de répétition du dernier numéro dans la voie,4,Texte,46
+typeVoieEtablissement,Type de voie,30,Texte,47
+libelleVoieEtablissement,Libellé de voie,100,Texte,48
+codePostalEtablissement,Code postal,9,Texte,49
+libelleCommuneEtablissement,Libellé de la commune,100,Texte,50
+libelleCommuneEtrangerEtablissement,Libellé de la commune pour un établissement situé à l’étranger,100,Texte,51
+distributionSpecialeEtablissement,Distribution spéciale de l’établissement,4,Texte,52
+codeCommuneEtablissement,Code commune de l’établissement,5,Liste de codes,53
+codeCedexEtablissement,Code cedex,4,Texte,54
+libelleCedexEtablissement,Libellé du code cedex,4,Texte,55
+codePaysEtrangerEtablissement,Code pays pour un établissement situé à l’étranger,5,Liste de codes,56
+libellePaysEtrangerEtablissement,Libellé du pays pour un établissement situé à l’étranger,100,Texte,57
+identifiantAdresseEtablissement,identifiant de l'adresse,15,Texte,58
+coordonneeLambertAbscisseEtablissement ,Abscisse des coordonnees Lambert de l'adresse,18,Double precision,59
+coordonneeLambertOrdonneeEtablissement ,Ordonnée des coordonnees Lambert de l'adresse,18,Double precision,60
+complementAdresse2Etablissement,Complément d’adresse secondaire,4,Texte,61
+numeroVoie2Etablissement,Numéro de la voie de l’adresse secondaire,4,Texte,62
+indiceRepetition2Etablissement,Indice de répétition dans la voie pour l’adresse secondaire,4,Texte,63
+typeVoie2Etablissement,Type de voie de l’adresse secondaire,4,Texte,64
+libelleVoie2Etablissement,Libellé de voie de l’adresse secondaire,4,Texte,65
+codePostal2Etablissement,Code postal de l’adresse secondaire,4,Texte,66
+libelleCommune2Etablissement,Libellé de la commune de l’adresse secondaire,null,Texte,67
+libelleCommuneEtranger2Etablissement,Libellé de la commune de l’adresse secondaire pour un établissement situé à l’étranger,null,Texte,68
+distributionSpeciale2Etablissement,Distribution spéciale de l’adresse secondaire de l’établissement,4,Texte,69
+codeCommune2Etablissement,Code commune de l’adresse secondaire,null,Texte,70
+codeCedex2Etablissement,Code cedex de l’adresse secondaire,4,Texte,71
+libelleCedex2Etablissement,Libellé du code cedex de l’adresse secondaire,4,Texte,72
+codePaysEtranger2Etablissement,Code pays de l’adresse secondaire pour un établissement situé à l’étranger,null,Texte,73
+libellePaysEtranger2Etablissement,Libellé du pays de l’adresse secondaire pour un établissement situé à l’étranger,null,Texte,74
+etatAdministratifEtablissement,État administratif de l’établissement,1,Liste de codes,75
+enseigne1Etablissement,Première ligne d’enseigne de l’établissement,50,Texte,76
+enseigne2Etablissement,Deuxième ligne d’enseigne de l’établissement,50,Texte,77
+enseigne3Etablissement,Troisième ligne d’enseigne de l’établissement,50,Texte,78
+denominationUsuelleEtablissement,Dénomination usuelle de l’établissement,100,Texte,79
+activitePrincipaleEtablissement,Activité principale de l'établissement pendant la période,6,Liste de codes,80
+nomenclatureActivitePrincipaleEtablissement,Nomenclature d’activité de la variable activitePrincipaleEtablissement,8,Liste de codes,81
+caractereEmployeurEtablissement,Caractère employeur de l’établissement,1,Liste de codes,82
