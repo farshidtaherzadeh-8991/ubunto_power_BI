@@ -6,7 +6,7 @@
 with source as (
     select
         COM_CODE::varchar(10) AS code_commune,
-        nom_commune varchar(255),
+        nom_commun::varchar(255),
         code_postal varchar(5),
         region varchar(100),
         departement varchar(100),
