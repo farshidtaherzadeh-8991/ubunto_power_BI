@@ -1,12 +1,12 @@
 {{ config(
     materialized='table',
-    schema='staging'   
+    schema='staging_entreprise'   
 ) }}
 
 
 select
     "catégories juridiques"::text as code,
-    "dernière mise à jour le 1er septembre 2022"::text libelle
+    "dernière mise à jour le 1er septembre 2022"::text as libelle
 
 
 

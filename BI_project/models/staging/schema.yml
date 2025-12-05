@@ -4,9 +4,9 @@ sources:
   - name: dwh_raw
     schema: dwh_raw
     tables:
-      - name: cj_septembre_2022_niveau_1
-      - name: cj_septembre_2022_niveau_2
-      - name: cj_septembre_2022_niveau_3
+      - name: cj_septembre_2022_niveau1
+      - name: cj_septembre_2022_niveau2
+      - name: cj_septembre_2022_niveau3
       - name: dates
       - name: etablissements
       - name: geopandas
