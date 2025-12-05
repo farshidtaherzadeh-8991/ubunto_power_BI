@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: dwh_raw
+    schema: dwh_raw
+    tables:
+      - name: cj_septembre_2022_niveau_1
+      - name: cj_septembre_2022_niveau_2
+      - name: cj_septembre_2022_niveau_3
+      - name: dates
+      - name: etablissements
+      - name: geopandas
+      - name: naf2008_5_niveaux
+      - name: naf2008_liste_n1
+      - name: naf2008_liste_n2
+      - name: naf2008_liste_n3
+      - name: naf2008_liste_n4
+      - name: naf2008_liste_n5
+      - name: population_municipale_communes_france
+      - name: ref_tranche_effectifs_unite_legale
