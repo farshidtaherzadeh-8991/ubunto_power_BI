@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_mac_f
+    schema: raw_mac_f
+    tables:
+      - name: cj_septembre_2022
+      - name: a_com2021_2154
+      - name: ref_tranche_effectifs_unite_legale
+      - name: etablissements
